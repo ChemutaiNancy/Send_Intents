@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //start a service
+        Intent intent = new Intent(this, MyIntentService.class);
+        startService(intent);
     }
 
 
